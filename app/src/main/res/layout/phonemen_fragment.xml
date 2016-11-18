@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+     >
+
+    <EditText
+        android:id="@+id/et_MenSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectline"
+        android:hint="@string/tv_searchmen"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/search_noresult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/headnew"
+        android:gravity="center_vertical"
+        android:text="没有匹配的结果!"
+        android:visibility="invisible" />
+
+    <ListView
+        android:id="@+id/LV_MenList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/tv_lefttelInfo"
+            android:background="#9d9d9d" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/add"
+                android:gravity="center"
+                android:onClick="addMen"
+                android:paddingRight="20dp"
+                android:text="@string/tv_addmen"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/menfrag_seach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/search"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:text="@string/tv_search"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_multidelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/delete_men"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_delete"
+                android:textSize="12sp" />
+        </LinearLayout>
+        
+ 
+        
+    </LinearLayout>
+
+</LinearLayout>

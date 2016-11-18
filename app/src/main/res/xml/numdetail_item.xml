@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+       >
+
+    <LinearLayout
+        android:id="@+id/ll_leftInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:padding="3dp" >
+        <TextView
+            android:id="@+id/tv_Numberishow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/TV_telumber"
+            android:textSize="12sp"
+             android:textColor="@color/color_blacktext"
+             />
+        <TextView
+            android:id="@+id/tv_numberdetailInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="@string/TV_telumber"
+            android:textSize="10sp"
+             android:textColor="@color/color_graytext"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="5dp" >
+        <TextView
+            android:id="@+id/tv_sendsmsCus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectline"
+            android:clickable="true"
+            android:onClick="onSendSMS"
+            android:text="@string/bt_sendSMS"
+            android:textSize="10sp"
+             android:textColor="@color/color_blacktext"
+             />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_below="@id/ll_leftInfo"
+        android:background="#9d9d9d" />
+
+</RelativeLayout>

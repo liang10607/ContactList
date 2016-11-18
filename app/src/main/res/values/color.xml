@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <drawable name="darkgray">#808080</drawable>
+  <drawable name="white">#FFFFFF</drawable>
+  <drawable name="blue">#0000FF</drawable>
+  <drawable name="lightred">#90FF0000</drawable>
+  <drawable name="lightgray">#90505050</drawable> 
+  <drawable name="barcolor">#4D8AB3</drawable> 
+  <color name="color_blue_back">#8a8ad8</color>
+  <color name="color_white_back">#FFFFFF</color>
+
+  <color name="color_blacktext">#110e00</color>
+  <color name="color_graytext">#706f6b</color>
+  
+  
+</resources>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp"
+     >
+
+    <ImageView
+        android:id="@+id/img_smsAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"
+       
+        android:padding="5dp"
+        android:src="@drawable/add" />
+
+    <EditText
+        android:id="@+id/et_smsAddBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:background="@drawable/rectline" />
+
+    <ImageView
+        android:id="@+id/img_sendMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"     
+        android:padding="5dp"
+        android:src="@drawable/sms_send"
+        android:visibility="gone" />
+    
+
+</LinearLayout>

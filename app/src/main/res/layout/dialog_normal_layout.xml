@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_nameBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/color_blue_back" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+             >
+
+            <com.liang.customUI.RoundImageView
+                android:id="@+id/img_headphoto"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/headnew" />
+
+            <TextView
+                android:id="@+id/dialog_TVname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="8dp"                
+                android:text="18819460928"
+                 />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/choose_DiaFun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/img_Diafun"
+            android:padding="8dp"
+            android:clickable="true"
+            android:src="@drawable/choose_down" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#9d9d9d" />
+
+    <RelativeLayout
+        android:id="@+id/ll_centerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+         >
+
+        <ListView
+            android:id="@+id/lv_singlecallLog"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            >
+        </ListView>
+
+        <TextView
+            android:id="@+id/tv_nocallLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="没有通话记录"
+            android:textSize="10sp"
+            />
+
+        
+        
+        <ScrollView
+            android:id="@+id/scroll_center"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+             >
+
+            <LinearLayout
+                android:id="@+id/scroll_container"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/bt_transparetSet"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="#FF0000"
+                    android:orientation="horizontal" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_telNuberContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FAFAFA" >
+
+                    <LinearLayout
+                        android:id="@+id/tv_lefttelInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical"
+                        android:padding="3dp" >
+
+                        <TextView
+                            android:id="@+id/tv_telNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/TV_telumber"
+                            android:textColor="@color/color_blacktext"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_telInfo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="@string/TV_telumber"
+                            android:textColor="@color/color_graytext"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingRight="5dp" >
+
+                        <TextView
+                            android:id="@+id/tv_sendsms"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rectline"
+                            android:clickable="true"
+                            android:onClick="onSendSMS"
+                            android:text="@string/bt_sendSMS"
+                            android:textColor="@color/color_blacktext"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dip"
+                        android:layout_below="@id/tv_lefttelInfo"
+                        android:background="#9d9d9d" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/color_blue_back"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#9d9d9d" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingTop="5dp" >
+
+            <TextView
+                android:id="@+id/tv_shareList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/share"
+                android:gravity="center"
+                android:text="@string/TV_ShareList"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1.2dip"
+                android:layout_height="match_parent"
+                android:background="#9d9d9d" />
+
+            <TextView
+                android:id="@+id/TV_addCollect"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/star"
+                android:gravity="center"
+                android:text="@string/TV_addCollect"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1.2dip"
+                android:layout_height="match_parent"
+                android:background="#9d9d9d" />
+
+            <TextView
+                android:id="@+id/TV_editList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/edit"
+                android:gravity="center"
+                android:text="@string/TV_editList"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1.2dip"
+                android:layout_height="match_parent"
+                android:background="#9d9d9d" />
+
+            <TextView
+                android:id="@+id/tv_menDetailDelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/delete_men"
+                android:gravity="center"
+                android:text="@string/tv_delete"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.phonecontactlist.SmsMenActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue_back" >
+
+        <ImageView
+            android:id="@+id/img_delSmsMenchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:contentDescription="@string/img_no"
+            android:onClick="cancelChoose"
+            android:padding="5dp"
+            android:src="@drawable/no_img" />
+
+        <TextView
+            android:id="@+id/tv_smsMenChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="未选择" />
+
+        <ImageView
+            android:id="@+id/img_saveSmsMenchoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:contentDescription="@string/img_yes"
+            android:onClick="saveChoose"
+            android:padding="5dp"
+            android:src="@drawable/yes_img" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_smsMenSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectline"
+        android:hint="@string/tv_searchmen"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/LV_smsMenList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dip"
+            android:background="#9d9d9d" />
+
+        <RelativeLayout
+            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/color_blue_back"
+              >
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/tv_smsMenAllCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_centerInParent="true"
+                android:clickable="true"
+                android:drawablePadding="5dp"
+                android:drawableTop="@drawable/allcheck_enable"
+                android:gravity="center"
+                android:text="全选"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+ 
+
+</LinearLayout>

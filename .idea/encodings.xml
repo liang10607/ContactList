@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/Model/CallLogModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/Model/ContactMen.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/Model/SMSModel.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/MyUtil/CallLogAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/MyUtil/ContactTimeUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/MyUtil/OneCallLogAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/MyUtil/SMSAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/MyUtil/SMSDetailAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/CallLogHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/ChineseSpelling.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/ContactHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/FirstLetterUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/MenSearch.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/controlHelper/SMSHelper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/customUI/FlowLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/customUI/MyScrollView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/customUI/RoundImageView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/AddMenActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/CallHis_Fragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/CustomDialog.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/MenLog_Fragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/MultiDelActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/NewSMSActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/SmsDetailActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/SmsMenActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/SmsSend_Fragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonecontactlist/Sms_Fragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonenum/utils/DataInitalBack.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonereceiver/CallLogReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonereceiver/ContactChangedReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/phonereceiver/SmsReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/liang/service/CallLogAddService.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

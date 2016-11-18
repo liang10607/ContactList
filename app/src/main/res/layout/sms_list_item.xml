@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+     >
+
+    <TextView
+        android:id="@+id/tv_smsTime"
+        android:layout_width="45dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="8dp"
+        android:text="@string/tv_curTime"
+        android:textSize="8sp" />
+    
+     <ImageView 
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="@drawable/timeshift"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_sms_number"
+            style="@style/menlist_numberStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="3dp"
+            android:text="@string/tv_defNuber"
+            android:textColor="@color/color_blacktext" 
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_sms_bodyExt"
+            style="@style/menlist_mumberAtrr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:paddingBottom="3dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:text="@string/tv_defAdr"
+            android:textColor="@color/color_graytext"
+            android:textSize="12sp"
+             />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_sms_notify"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/tv_calldetail"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:src="@drawable/see_more"
+        android:visibility="gone"
+         />
+
+</LinearLayout>

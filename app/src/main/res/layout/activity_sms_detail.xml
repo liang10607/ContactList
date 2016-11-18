@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context="com.liang.phonecontactlist.SmsDetailActivity" >
+
+    <RelativeLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/lay_smsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_blue_back" >
+
+            <TextView
+                android:id="@+id/tv_smsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingBottom="4dp"
+                android:paddingLeft="65dp"
+                android:text="联系人"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/img_smsshowMenMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:clickable="true"
+                android:contentDescription="@string/img_Diafun"
+                android:onClick="showSmsMenEdit"
+                android:padding="8dp"
+                android:src="@drawable/choose_down" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/lay_hideOut"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_below="@id/lay_smsName"
+            android:layout_centerHorizontal="true"
+            android:background="@color/color_blue_back"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_smsNumer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:maxLines="6"
+                android:paddingBottom="4dp"
+                android:paddingLeft="65dp"
+                android:scrollbars="vertical"
+                android:singleLine="false"
+                android:text="号码"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_smsNumerLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_smsNumer"
+                android:paddingBottom="4dp"
+                android:paddingLeft="65dp"
+                android:text="归属地"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_opensmsMenDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/men_detail"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="查看联系人"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_smsMentoBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/toblack"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="黑名单"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_smsDial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/dial"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:text="拨号"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/sms_send_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_smsShow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sms_send_frameLayout"
+        android:layout_below="@id/lay_top"
+        android:divider="@null"
+        android:paddingTop="20dp" >
+    </ListView>
+
+    <com.liang.customUI.RoundImageView
+        android:id="@+id/img_smsheadphoto"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/headnew" />
+
+</RelativeLayout>

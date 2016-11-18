@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="3dp"
+    android:layout_marginRight="3dp"
+    android:orientation="vertical" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectline"
+        android:hint="@string/et_searcSms"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/lv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" 
+        android:divider="@drawable/list_divider"
+        >
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#9d9d9d" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_addNewMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/add"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:text="@string/tv_newSms"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_smsMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/menu"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:text="@string/tv_menu"
+            android:textSize="12sp"
+            android:visibility="gone"
+             />
+    </LinearLayout>
+
+</LinearLayout>

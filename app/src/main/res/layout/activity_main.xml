@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="true"
+    android:orientation="vertical"
+    tools:context="com.liang.phonecontactlist.MainActivity" >
+
+    <EditText
+        android:id="@+id/et_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/color_blue_back"
+        android:digits="0123456789*#"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:phoneNumber="true"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_mainMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue_back"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp" >
+
+        <TextView
+            android:id="@+id/tv_Callhistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="showCallLog"
+            android:text="@string/call_history"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_phoneMen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawableBottom="@drawable/dot"
+            android:gravity="center"
+            android:onClick="showMenLog"
+            android:text="@string/phoneMen"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_SMSrecord"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:onClick="showSMS"
+            android:text="@string/SMS_record"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/content_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

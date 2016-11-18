@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.phonecontactlist.NotifySmsActivity" >
+
+    <TextView
+        android:id="@+id/tv_topNotify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_blue_back"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="通知消息"
+        android:textSize="14dp" />
+
+    <FrameLayout
+        android:id="@+id/notigy_frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

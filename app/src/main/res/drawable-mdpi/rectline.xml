@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >  
+      
+   
+      
+    <!-- 描边 -->  
+    <stroke  
+        android:width="0.1dp"   
+        android:color="#B0C4DE" /> <!-- 定义描边的宽度和描边的颜色值 -->  
+      
+    <!-- 圆角 -->  
+    <corners  
+        android:bottomLeftRadius="5dp"  
+        android:bottomRightRadius="5dp"  
+        android:topLeftRadius="5dp"  
+        android:topRightRadius="5dp" /> <!-- 设置四个角的半径 -->  
+      
+    <!-- 间隔 -->  
+    <padding  
+        android:bottom="6dp"  
+        android:left="6dp"  
+        android:right="6dp"  
+        android:top="6dp" /> <!-- 设置各个方向的间隔 -->  
+  
+</shape> 

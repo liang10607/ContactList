@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liang.phonecontactlist.NewSMSActivity" >
+
+    <LinearLayout 
+        android:id="@+id/line_topNewSms"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+      <TextView
+        android:id="@+id/tv_topNotify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/color_blue_back"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="新建信息"
+        android:textSize="14dp" />   
+        
+    </LinearLayout>
+    
+   
+
+    <LinearLayout
+        android:id="@+id/line_inputBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line_topNewSms"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+        <com.liang.customUI.MyScrollView
+            android:id="@+id/src_inputScroll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <com.liang.customUI.FlowLayout
+                android:id="@+id/flow_menAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rectline"
+                android:scrollbars="vertical" >
+
+                <EditText
+                    android:id="@+id/et_inputMen"
+                    style="@style/edittext_number"
+                    android:hint="请输入联系人号码" />
+            </com.liang.customUI.FlowLayout>
+        </com.liang.customUI.MyScrollView>
+
+        <ImageView
+            android:id="@+id/img_addLocalMen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:src="@drawable/men_detail" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_newSmsAddBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_sms_searchedmen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/frame_newSmsAddBar"
+        android:layout_below="@id/line_inputBar" >
+    </ListView>
+
+</RelativeLayout>

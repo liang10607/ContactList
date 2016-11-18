@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.phonecontactlist.MultiDelActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_blue_back"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_canelDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:drawableLeft="@drawable/no_img"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_deleteInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="删除联系人" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_delMenList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="10dp" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/color_blue_back"
+        android:orientation="horizontal"
+        android:paddingTop="3dp" >
+
+        <TextView
+            android:id="@+id/tv_deletebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/allcheck_enable"
+            android:gravity="center"
+            android:onClick="addMen"
+            android:text="删除"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_deleteChooseAll"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/allcheck_enable"
+            android:gravity="center"
+            android:text="全选"
+             
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
